@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -70,6 +73,46 @@ header {
     background-color: #333;
     margin: 5px;
     transition: all 0.3s ease;
+}
+
+.h2 {
+    background-color: #ffcc00;color: #500000;
+    width: max-content;
+    padding: 5px;
+    margin: 2px;
+    border: 1px #500000;
+    border-style: solid;
+    border-top-left-radius: 13%;
+    border-top-right-radius: 13%;
+    border-bottom-left-radius: 13%;
+    border-bottom-right-radius: 13%;
+}
+
+.p {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #500000;
+    background-color: ##ffcc00; color: #500000;
+}
+
+.p::after {
+    content: "";
+    position: absolute;
+    bottom: -60px; /* Negative for the arrow to go down, Positive to go up */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 30px;
+    border-style: solid;
+    border-color: #500000 transparent transparent transparent;
+}
+
+.YT {
+    margin-top: 30px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
